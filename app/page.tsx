@@ -140,7 +140,7 @@ export default function GalleryPage() {
       <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           <div>
-            <h1 className="text-xl sm:text-2xl font-bold text-foreground">Your Name</h1>
+            <h1 className="text-xl sm:text-2xl font-bold text-foreground">Tshering's Gallerys</h1>
             <p className="text-xs sm:text-sm text-muted-foreground">My Life Gallery</p>
           </div>
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
