@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import Link from "next/link"
 import { GalleryBoard } from "@/components/gallery-board"
 import { HeroSection } from "@/components/hero-section"
 
@@ -143,16 +144,13 @@ export default function GalleryPage() {
             <h1 className="text-xl sm:text-2xl font-bold text-foreground">Tshering's Gallerys</h1>
             <p className="text-xs sm:text-sm text-muted-foreground">My Life Gallery</p>
           </div>
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-            <a href="#travel" className="text-sm text-foreground hover:text-secondary transition-colors">
-              Travel
-            </a>
-            <a href="#urban" className="text-sm text-foreground hover:text-secondary transition-colors">
-              Urban
-            </a>
-            <a href="#moments" className="text-sm text-foreground hover:text-secondary transition-colors">
-              Moments
-            </a>
+          <nav className="flex items-center gap-6 lg:gap-8">
+            <Link
+              href="/diary"
+              className="text-sm text-foreground hover:text-secondary transition-colors px-4 py-2 rounded-lg bg-secondary/10 hover:bg-secondary/20"
+            >
+              My Diary
+            </Link>
           </nav>
         </div>
       </header>
