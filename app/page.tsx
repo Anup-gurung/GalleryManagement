@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 import { GalleryBoard } from "@/components/gallery-board"
 import { HeroSection } from "@/components/hero-section"
+import { ValentineProposal } from "@/components/valentine-proposal"
 
 const galleryBoards = [
   {
@@ -137,6 +138,9 @@ export default function GalleryPage() {
 
   return (
     <main className="relative min-h-screen bg-background">
+      {/* Valentine Proposal Modal */}
+      <ValentineProposal />
+
       {/* Simple Header with name and tagline */}
       <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
